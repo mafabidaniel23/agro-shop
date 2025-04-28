@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("farm.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    text-align: center;
+    
+   
+}
+main {
+    padding-top: 100px;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background-color: green;
+}
+.logo {
+    display: flex;
+}
+.logo h1 {
+    margin-left: 10px;
+    color: white;
+}
+.logo img {
+    border-radius: 50%;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+nav {
+    flex: 1;
+    text-align: right;
+
+}
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ff523b;
+}
+.top {
+    background-color: lightgreen;
+    padding: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 20px;
+    color: black;
+}
+
+    form {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 20px;
+        
+    }
+    form > div {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+    form div label {
+        margin-left: 20px;
+
+    }
+    form input, textarea {
+        box-sizing: border-box;
+        height: 35px;
+        padding: 1em;
+        font: inherit;
+        border-radius: 10px;
+        background-color: white;
+        border-left: none;
+    }
+    form button {
+        margin-top: 10px;
+        border: none;
+        border-radius: 20px;
+        width: 30%;
+        font-size: large;
+        padding: 10px;
+        background-color: orangered;
+        height: 40px;
+        color: white;
+        cursor: pointer;
+        transition: 0.5s;
+        text-align: center;
+        margin-left: 150px;
+    }
+    form button:hover {
+        background-color: #555;
+    }
+    .col-1, .col-2 {
+        width: 45%;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: 100px;
+        background-color: lightgreen;
+    }
+    .col-2 {
+        gap: 20px;
+        line-height: 40px;
+        text-align: left;
+        
+    }
+    .col-2 , .col-2 h3 {
+        text-align: center;
+    }
+    .col-1 {
+        margin-left: 100px;
+    }
+    #icony {
+       font-size: 50px;
+       margin-top: 30px;
+       color: green;
+       text-align: center;
+    }
+    .row {
+        display: flex;
+        flex-basis: 40%;
+        justify-content: space-between;
+    }
+    main {
+        padding-top: 150px;
+    }
+
+    /* -------footer---- */
+footer {
+    background-color: rgb(34, 31, 31);
+    color: white;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    z-index: 500;
+  }
+
+.footer {
+    background-color: rgb(34, 31, 31);
+    color: white;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+#icon {
+  font-size: 20px;
+}
+
+footer .links a {
+    text-decoration: none;
+    color: white;
+    line-height: 2.3;
+  }
+footer .elite-gadgets {
+    color: white;
+    line-height: 40px;
+}
+  
+.social-icons {
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: green; 
+}
+footer p {
+    color: white;
+}
+footer .news-letter button {
+  background-color: grey;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer .news-letter button:hover {
+  background-color: #ff523b;
+
+}
+footer .foot {
+  text-align: center;
+}
+footer hr {
+  width: 90%;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+/* -------whatsapp------- */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.whatsapp-icon:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+.menu-bar-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* -------RESPONSIVE DESIGN------- */
+
+/* For tablets (screen width up to 992px) */
+/* -------media query for menu ------- */
+@media only screen and (max-width: 920px) {
+    nav ul {
+            position: absolute;
+            top: 70px;
+            left: 0;
+            background: #333;
+            width: 100%;
+            overflow: hidden;
+            transition: max-height 0.5s;
+            margin-top: 30px;
+        }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+            color: #fff;
+    
+    }
+    .menu-bar-icon{
+            display: block;
+            cursor: pointer;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .elite-gadgets,
+    footer .links,
+    footer .news-letter {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    footer hr {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    }
+
+    /* Responsive for the contact form and info */
+@media only screen and (max-width: 925px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-1, .col-2 {
+        width: 80%;
+        margin: 20px 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    form button {
+        width: 60%;
+        margin: 20px auto;
+    }
+}
+
+/* Smaller devices (phones) */
+@media only screen and (max-width: 600px) {
+    .top {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .col-1, .col-2 {
+        width: 90%;
+    }
+    form input, textarea {
+        width: 90%;
+        margin-left: 10px;
+    }
+    form div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    form div label {
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+    form button {
+        width: 80%;
+    }
+    nav ul {
+        top: 60px;
+    }
+    .menu-bar-icon {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .logo h1 {
+        font-size: 20px;
+    }
+}

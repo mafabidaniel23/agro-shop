@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRO-SHOP UGANDA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="logo.png" alt="elite-logo" width="60px" height="60px">
+                <h1>AGRO-SHOP UGANDA</h1>
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="aboutus.htm">AboutUs</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                    <li><a href="logg.htm">Acount</a></li>
+                </ul>
+            </nav>
+            <img src="shopping-bag-icon.png" alt="shoppingcart" width="30px" height="30px" id="cart-icon">
+            <img src="menu-bar-icon.png" alt="menu" class="menu-bar-icon" onclick="menutoggle()">
+        </div>
+    </header>
+    <main>
+    <div class="header">
+        <div class="container">
+        
+        <div class="row">
+            <div class="col-2">
+                <h1>Get yourself the Best <br>Agricultural Inputs</h1>
+                <p>Step into the world of limitless possibilities on your Farm With AGRO-SHOP Products,<br> your premier destination for Quality Agricultural Inputs.</p>
+                <a href="#products" class="btn">Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="agro-inputs.jpg" alt="gadgets">    
+            </div>
+        </div>
+        </div>
+    </div>
+<!-- featured categories -->
+ <div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <h4>APPLIANCES</h4>
+                <img src="Bomba-magoba.jpg" alt="Bomba-magoba">
+                
+            </div>
+            <div class="col-3">
+                <h4>CHEMICALS</h4>
+                <img src="Cafedak.jpg" alt="Cafedak">
+                
+            </div>
+            <div class="col-3">
+                <h4>MACHINERY</h4>
+                <img src="machinery.jpg" alt="phones">
+                
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- featured products -->
+  <div class="small-container">
+    <h2 class="tittle" id="products">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="Bomba-kaliba.jpg" alt="Bomba-kaliba">
+            <h4>Bomba Kaliba</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Ushs: 65,000</p>
+            <button class="add-to-cart" data-name="Bomba Kaliba" data-price="65000">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="24D.png" alt="24D">
+            <h4>24-D</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Ushs: 35,000</p>
+            <button class="add-to-cart" data-name="24-D" data-price="35,000">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="biota_vegaline_1.jpg" alt="biota_vegaline_1">
+            <h4>Biota Vegaline-1</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+
+            </div>
+            <p>Ushs: 120,000</p>
+            <button class="add-to-cart" data-name="Biota Vegaline-1" data-price="120000">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="copper.jpg" alt="copper">
+            <h4>Copper Fungicide</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Ushs: 50,000 1kg</p>
+            <button class="add-to-cart" data-name="Copper Fungicide" data-price="120000">Add to Cart</button>
+        </div>
+    </div>
+    <h2 class="tittle">Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="agrothrivefruitandflower.png" alt="thrive">
+            <h4>Agro-Thrive Fruit & Flower</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Ushs: 120,000 5 Ltrs</p>
+            <button class="add-to-cart" data-name="Agro-Thrive" data-price="120000">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="aminopearl.png" alt="aminopearl">
+            <h4>Amino-Pearl</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Ushs: 150,000 5 Ltrs</p>
+            <button class="add-to-cart" data-name="Amino-Pearl" data-price="150000">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="dudfenos.jpg" alt="dudfenos">
+            <h4>Dudu Fenos</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+
+            </div>
+            <p>Ushs: 25,000</p>
+            <button class="add-to-cart" data-name="Dudu Fenos" data-price="25000">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="Gloriaf1.jpg" alt="Gloriaf1">
+            <h4>Gloria F1</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Ushs: 35,000 10g</p>
+            <button class="add-to-cart" data-name="Gloria F1" data-price="35000">Add to Cart</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="BioseedAbhaf1-Seed.png" alt="tomato">
+            <h4>Abha F1 Okra</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Ushs: 30,000 10g</p>
+            <button class="add-to-cart" data-name="Abha F1" data-price="30,000">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="ONIONREDBRUNSWICK.png" alt="ONIONREDBRUNSWICK">
+            <h4>Redbrunswick Onion</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Ushs: 45,000 25g</p>
+            <button class="add-to-cart" data-name="Redbrunswick Onon" data-price="45000">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="Unisem-Seedsf1.png" alt="airpods">
+            <h4>Unisem-Seeds F1 </h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+
+            </div>
+            <p>Ushs: 60,000</p>
+            <button class="add-to-cart" data-name="Unisem-Seeds" data-price="60000">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <img src="crimsonwatermelonseeds.jpg" alt="crimsonwatermelonseeds">
+            <h4>Crimson Watermelon</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Ushs: 125,000</p>
+            <button class="add-to-cart" data-name="Crimson Watermelon" data-price="125000">Add to Cart</button>
+        </div>
+    </div>
+  </div>
+  <!-- --------Offer------- -->
+   <div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="tractor.jpg" alt="">
+            </div>
+            <div class="col-2" id="col-2">
+                <p>Exclusively Available on Agro-Shop Uganda</p>
+                <h1>Latest Farm Tractor</h1>
+                <small> Our curated selection of Farm Machinery and Equipments is designed to elevate your lifestyle, streamline your Farm routines, and unlock new levels of productivity and Income.</small><br>
+                <a href="#" class="btn">Buy Now &#8594</a>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- -------Testimonial------- -->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i id="fa" class="fa-solid fa-quote-left"></i>
+                    <p>"Highly recommend Agro-Shop for AGric enthusiasts!,  There Products are a productivity powerhouse!
+                        "</p>
+                    <div id="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <img src="professor-icon.png" alt="user">
+                    <h3>Professor Tonny</h3>
+                </div>
+                <div class="col-3">
+                    <i id="fa" class="fa-solid fa-quote-left"></i>
+                    <p>"Agro-Shop never disappoints!,  Fast shipping, excellent product!!
+                        "</p>
+                    <div id="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <img src="woman-icon.png" alt="user">
+                    <h3>Blessed Joy</h3>
+                </div>
+                <div class="col-3">
+                    <i id="fa" class="fa-solid fa-quote-left"></i>
+                    <p>"Best purchase I've made this year!!,  Top-notch customer service and products!!
+                        "</p>
+                    <div id="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <img src="professor-icon.png" alt="user">
+                    <h3>Ssemma Ronny</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------brands------- -->
+ <div class="brands">
+    <div class="small-container">
+        <div class="row-brand">
+            <div class="col-5">
+                <img src="osho.png">
+            </div>
+            <div class="col-5">
+                <img src="bukoola.png">
+            </div>
+            <div class="col-5">
+                <img src="nsanja.png">
+            </div>
+            <div class="col-5">
+                <img src="sygenta.png">
+            </div>
+            <div class="col-5">
+                <img src="nutrichem.png">
+            </div>
+            <div class="col-5">
+                <img src="brand2.png">
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- -------whatsapp----- -->
+ <section>
+    <a href="https://wa.me/+256784737709" target="_blank" class="whatsapp-icon">
+      <i class="fab fa-whatsapp"></i>
+  </a>
+</section>
+
+<!-- ---------footer------ -->
+<footer>
+    <div class="footer">
+      <div class="elite-gadgets">
+      <h2>AGRO-SHOP UG</h2>
+        <p><i id="icon" class="fas fa-phone"></i> Tel: +256 123 456 789</p>
+        <p><i id="icon" class="fas fa-envelope"></i> Email: info@agroshopuganda.com</p>
+        <p><i id="icon" class="fas fa-map-marker-alt"></i> Campus Mall 2 <sup>nd</sup> Floor Shop G16</p>
+        <p><i id="icon" class="fas fa-box"></i> P.O. Box 1234, Kampala, Uganda</p>
+      </div>
+      <div class="links">
+      <h2>USEFUL LINKS</h2>
+      <a href="index.htm">Home</a><br>
+      <a href="#products">Products</a><br>
+      <a href="aboutus.htm">AboutUs</a><br>
+      <a href="contact.htm">ContactUs</a>
+      </div>
+      <div class="news-letter">
+      <h2>OUR NEWSLETTER</h2>
+      <p>Subscribe to our newsletter to get latest updates:</p>
+      <p>Email:</p>
+      <input type="email"><br><br>
+      <button>Subscribe</button>
+      </div>
+    </div>
+    <hr id="horizon">
+    <div class="foot">
+    <p>&copy; 2024 Agro-Shop Uganda. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- -------cart------ -->
+
+  <div id="cart-container">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="cart-total">Ushs: 0</span></p>
+
+    <label for="payment-method">Select Payment Method:</label>
+    <select id="payment-method">
+        <option value="mobile-money">Mobile Money</option>
+        <option value="credit-card">Credit Card</option>
+        <option value="cash-on-delivery">Cash on Delivery</option>
+    </select>
+
+    <button id="checkout-btn">Checkout</button>
+    </div>
+</main>
+
+    <!-- -------js for toggle menu------- -->
+     <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if(menuItems.style.maxHeight == "0px"){
+                menuItems.style.maxHeight = "200px"
+            }
+            else{
+                menuItems.style.maxHeight = "0px"
+            }
+        }
+
+     </script>
+     <script>
+        const cart = [];
+        const cartItemsEl = document.getElementById("cart-items");
+        const cartTotalEl = document.getElementById("cart-total");
+    
+        function updateCartDisplay() {
+            cartItemsEl.innerHTML = "";
+            let total = 0;
+    
+            cart.forEach(item => {
+                const li = document.createElement("li");
+                li.textContent = `${item.name} - Ushs: ${item.price.toLocaleString()}`;
+                cartItemsEl.appendChild(li);
+                total += item.price;
+            });
+    
+            cartTotalEl.textContent = `Ushs: ${total.toLocaleString()}`;
+        }
+    
+        document.querySelectorAll(".add-to-cart").forEach(button => {
+            button.addEventListener("click", () => {
+                const name = button.getAttribute("data-name");
+                const price = parseInt(button.getAttribute("data-price"));
+                cart.push({ name, price });
+                updateCartDisplay();
+            });
+        });
+    
+        document.getElementById("checkout-btn").addEventListener("click", () => {
+            if (cart.length === 0) {
+                alert("Your cart is empty!");
+                return;
+            }
+    
+            const paymentMethod = document.getElementById("payment-method").value;
+            alert(`Thank you for shopping with us!\nPayment Method: ${paymentMethod}`);
+            cart.length = 0; // Clear cart
+            updateCartDisplay();
+        });
+    </script>
+    <!-- ------toggle carticon----- -->
+    <script>
+        const cartIcon = document.getElementById("cart-icon");
+        const cartContainer = document.getElementById("cart-container");
+    
+        cartIcon.addEventListener("click", () => {
+            if (cartContainer.style.display === "none" || cartContainer.style.display === "") {
+                cartContainer.style.display = "block";
+            } else {
+                cartContainer.style.display = "none";
+            }
+        });
+    </script>
+    
+    
+</body>
+</html>

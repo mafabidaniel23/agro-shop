@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_Agro-Shop Uganda</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- ------heading------ -->
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="logo.png" alt="elite-logo" width="60px" height="60px">
+                <h1>AGRO-SHOP UGANDA</h1>
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="index.htm#products">Products</a></li>
+                    <li><a href="aboutus.htm">AboutUs</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                    <li><a href="logg.htm">Acount</a></li>
+                </ul>
+            </nav>
+            <img src="shopping-bag-icon.png" alt="shoppingcart" width="30px" height="30px">
+            <img src="menu-bar-icon.png" alt="menu" class="menu-bar-icon" onclick="menutoggle()">
+           
+        </div>
+    </header>
+    <main>
+    <div class="top">
+    <h1>Get in Touch</h1>
+    <p>Want to get in touch with us? We would love to hear from you. Here is how you can reach out to us:</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <i id="icony" class="fas fa-envelope"></i>
+                <form>
+                    <label><h3>Email Us Now!</h3></label>
+                    <div>
+                    <label for="clientname">Full Name:</label>
+                    <input type="text" id="clientname" placeholder="Enter your full NAme" required>
+                    </div>
+                    <div>
+                        <label for="phonenumber">ContactNo:</label>
+                        <input type="text" inputmode="numeric" pattern="\d{1,13}" maxlength="13"  id="phonenumber" placeholder="Phone Number" maxlength="13" required>
+                    </div>
+                    <div>
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" placeholder="Specify the Reason" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label> 
+                        <textarea name="Message" id="message" placeholder="Write your message here......" required></textarea>
+                    </div>
+                    <button>Send Message</button>
+                </form>
+            </div>
+            <div class="col-2">
+                <i id="icony" class="fas fa-phone" ></i>
+                <h3>Contact Ways:</h3>
+                <p><i id="icon" class="fas fa-phone"></i> Tel: +256 123 456 789</p>
+                <p><i id="icon" class="fas fa-envelope"></i> Email: info@agroshopuganda.com</p>
+                <p><i id="icon" class="fas fa-map-marker-alt"></i> Campus Mall 2 <sup>nd</sup> Floor Shop G16</p>
+                <p><i id="icon" class="fas fa-box"></i> P.O. Box 1234, Kampala, Uganda</p>
+            </div>
+        </div>
+    </div>
+
+    
+<!-- ------whatsapp------     -->
+<section>
+    <a href="https://wa.me/+256784737709" target="_blank" class="whatsapp-icon">
+      <i class="fab fa-whatsapp"></i>
+  </a>
+</section>
+         <!-- ---------footer------ -->
+<footer>
+    <div class="footer">
+      <div class="elite-gadgets">
+      <h2>AGRO-SHOP UGANDA</h2>
+        <p><i id="icon" class="fas fa-phone"></i> Tel: +256 123 456 789</p>
+        <p><i id="icon" class="fas fa-envelope"></i> Email: info@elitegadgetsug.com</p>
+        <p><i id="icon" class="fas fa-map-marker-alt"></i> Campus Mall 2 <sup>nd</sup> Floor Shop G16</p>
+        <p><i id="icon" class="fas fa-box"></i> P.O. Box 1234, Kampala, Uganda</p>
+      </div>
+      <div class="links">
+      <h2>USEFUL LINKS</h2>
+      <a href="index.htm">Home</a><br>
+      <a href="index.htm#products">Products</a><br>
+      <a href="aboutus.htm">AboutUs</a><br>
+      <a href="contact.htm">ContactUs</a>
+      </div>
+      <div class="news-letter">
+      <h2>OUR NEWSLETTER</h2>
+      <p>Subscribe to our newsletter to get latest updates:</p>
+      <p>Email:</p>
+      <input type="email"><br><br>
+      <button>Subscribe</button>
+      </div>
+    </div>
+    <hr id="horizon">
+    <div class="foot">
+    <p>&copy; 2024 Agro-Shop Uganda. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<!-- -------js for toggle menu------- -->
+<script>
+    var menuItems = document.getElementById("menuItems");
+    menuItems.style.maxHeight = "0px";
+    function menutoggle() {
+        if(menuItems.style.maxHeight == "0px"){
+            menuItems.style.maxHeight = "200px"
+        }
+        else{
+            menuItems.style.maxHeight = "0px"
+        }
+    }
+
+ </script>
+
+</body>
+</html>

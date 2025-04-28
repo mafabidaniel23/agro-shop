@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("farm.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    text-align: center;
+    
+   
+}
+main {
+    padding-top: 100px;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background-color: green;
+}
+.logo {
+    display: flex;
+}
+.logo h1 {
+    margin-left: 10px;
+    color: #fff;
+}
+.logo img {
+    border-radius: 50%;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+nav {
+    flex: 1;
+    text-align: right;
+
+}
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;}
+nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+nav ul li a:hover {
+    color: #ff523b;
+    text-decoration: underline;
+}
+
+/* ------forms---- */
+section {
+    align-items: center;
+    padding-left: 350px;
+    
+    
+}
+h4{
+    font-size: 2.5rem;
+    color: orangered;
+
+}
+form {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+form > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+form label {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    fill: white;
+    border-radius: 10px 0 0 10px;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+}
+form label i {
+    color: white;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+form input {
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-width: 0;
+    height: 50px;
+    padding: 1em;
+    font: inherit;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid white;
+    background-color: white;
+    border-left: none;
+}
+form input:hover {
+    border-color: orangered;
+}
+form input:focus {
+    outline: none;
+    border-color: orangered;
+}
+form input::placeholder {
+    color: orangered;
+    opacity: 1;
+}
+form button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: large;
+    padding: 10px;
+    background-color: green;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+form button:hover {
+    background: #555;
+}
+a {
+    text-decoration: none;
+    color: orangered;
+}
+a:hover {
+    text-decoration: underline;
+}
+.hidden {
+    display: none;
+}
+.container {
+    margin-top: 70px;
+    display: flex;
+    border: 2px solid #ff523b;
+    justify-content: center;
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: lightgreen;
+    margin-bottom: 40px;
+    
+    
+}
+/* -------footer---- */
+footer {
+    background-color: rgb(34, 31, 31);
+    color: white;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    z-index: 500;
+  }
+
+.footer {
+    background-color: rgb(34, 31, 31);
+    color: white;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+#icon {
+  font-size: 20px;
+}
+
+footer .links a {
+    text-decoration: none;
+    color: white;
+    line-height: 2.3;
+  }
+footer .elite-gadgets {
+    color: white;
+    line-height: 40px;
+}
+  
+.social-icons {
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff523b; 
+}
+footer p {
+    color: white;
+}
+footer .news-letter button {
+  background-color: grey;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer .news-letter button:hover {
+  background-color: #ff523b;
+
+}
+footer .foot {
+  text-align: center;
+}
+footer hr {
+  width: 90%;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.menu-bar-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* -------RESPONSIVE DESIGN------- */
+
+/* For tablets (screen width up to 992px) */
+/* -------media query for menu ------- */
+@media only screen and (max-width: 920px) {
+    nav ul {
+            position: absolute;
+            top: 70px;
+            left: 0;
+            background: #333;
+            width: 100%;
+            overflow: hidden;
+            transition: max-height 0.5s;
+            margin-top: 30px;
+        }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+            color: #fff;
+    
+    }
+    .menu-bar-icon{
+            display: block;
+            cursor: pointer;
+    }
+    .container {
+        width: 70%;
+        padding: 15px;
+        text-align: center;
+        margin-left: 40px;
+    }
+    section {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 30px;
+        align-items: center;
+        margin-left: auto;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .elite-gadgets,
+    footer .links,
+    footer .news-letter {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    footer hr {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    }
+
+/* For mobile devices (screen width up to 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        flex-basis: 100%;
+        align-items: center;
+        margin-left: 30px;
+    }
+    form {
+        gap: 8px;
+    }
+    form label {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    form input {
+        height: 40px;
+        font-size: 0.9rem;
+    }
+    form button {
+        height: 35px;
+        font-size: medium;
+    }
+    footer .news-letter input {
+        width: 80%;
+    }
+}
+
+/* For very small screens (screen width up to 480px) */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    form label i {
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    footer {
+        padding: 10px;
+    }
+    footer .news-letter input {
+        width: 90%;
+    }
+    footer .social-icons a {
+        font-size: 20px;
+    }
+}

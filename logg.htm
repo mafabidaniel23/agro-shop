@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro-Shop-Account</title>
+    <link rel="stylesheet" href="logg.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body>
+<header>
+    <div class="nav-bar">
+        <div class="logo">
+            <img src="logo.png" alt="elite-logo" width="60" height="60">
+            <h1>AGRO-SHOP UGANDA</h1>
+        </div>
+        <nav>
+            <ul id="menuItems">
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="index.htm#products">Products</a></li>
+                <li><a href="aboutus.htm">AboutUs</a></li>
+                <li><a href="contact.htm">Contact</a></li>
+                <li><a href="logg.htm">Account</a></li>
+            </ul>
+        </nav>
+        <img src="shopping-bag-icon.png" alt="shoppingcart" width="30" height="30">
+        <img src="menu-bar-icon.png" alt="menu" class="menu-bar-icon" onclick="menutoggle()">
+    </div>
+</header>
+
+<main>
+    <!-- --------login------- -->
+    <section>
+        <div class="container">
+            <form id="loginform" onsubmit="submitlogin(event)">
+                <h1>Login</h1>
+                <div>
+                    <label for="loginusername"><i class="fa-solid fa-user"></i></label>
+                    <input type="text" id="loginusername" name="loginusername" placeholder="Enter your username" required>
+                </div>
+                <div>
+                    <label for="loginpassword"><i class="fa-solid fa-user-lock"></i></label>
+                    <input type="password" id="loginpassword" name="loginpassword" placeholder="Enter your password" maxlength="8" required>
+                </div>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" onclick="showSignup()">Signup</a></p>
+            </form>
+
+            <form id="signupform" class="hidden" onsubmit="createaccount(event)">
+                <h2>Signup</h2>
+                <div>
+                    <label for="signupname"><i class="fa-solid fa-user"></i></label>
+                    <input type="text" id="signupname" name="signupname" placeholder="Enter your name" required>
+                </div>
+                <div>
+                    <label for="signupemail"><i class="fa-solid fa-envelope"></i></label>
+                    <input type="text" id="signupemail" name="signupemail" placeholder="Enter your email" maxlength="25" required>
+                </div>
+                <div>
+                    <label for="signuppassword"><i class="fa-solid fa-user-lock"></i></label>
+                    <input type="password" id="signuppassword" name="signuppassword" placeholder="Set a password" maxlength="8" required>
+                </div>
+                <div>
+                    <label for="signupconfirmpassword"><i class="fa-solid fa-user-lock"></i></label>
+                    <input type="password" id="signupconfirmpassword" name="signupconfirmpassword" placeholder="Confirm password" maxlength="8" required>
+                </div>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ---------footer------ -->
+    <footer>
+        <div class="footer">
+            <div class="elite-gadgets">
+                <h2>AGRO-SHOP UGANDA</h2>
+                <p><i id="icon" class="fas fa-phone"></i> Tel: +256 123 456 789</p>
+                <p><i id="icon" class="fas fa-envelope"></i> Email: info@agroshopuganda.com</p>
+                <p><i id="icon" class="fas fa-map-marker-alt"></i> Campus Mall 2<sup>nd</sup> Floor Shop G16</p>
+                <p><i id="icon" class="fas fa-box"></i> P.O. Box 1234, Kampala, Uganda</p>
+            </div>
+            <div class="links">
+                <h2>USEFUL LINKS</h2>
+                <a href="index.htm">Home</a><br>
+                <a href="index.htm#products">Products</a><br>
+                <a href="aboutus.htm">AboutUs</a><br>
+                <a href="contact.htm">ContactUs</a>
+            </div>
+            <div class="news-letter">
+                <h2>OUR NEWSLETTER</h2>
+                <p>Subscribe to our newsletter to get latest updates:</p>
+                <p>Email:</p>
+                <input type="email"><br><br>
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <hr id="horizon">
+        <div class="foot">
+            <p>&copy; 2024 Agro-Shop Uganda. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+</main>
+
+<script>
+    function submitlogin(event) {
+        event.preventDefault();
+        var username = document.getElementById("loginusername").value;
+        var password = document.getElementById("loginpassword").value;
+
+        if (!username || !password) {
+            alert("Please fill in all the fields");
+            return;
+        }
+        alert("Login successful!");
+    
+    }
+
+    function createaccount(event) {
+        event.preventDefault();
+        var name = document.getElementById("signupname").value;
+        var email = document.getElementById("signupemail").value;
+        var password = document.getElementById("signuppassword").value;
+        var confirmPassword = document.getElementById("signupconfirmpassword").value;
+
+        if (!name || !email || !password || !confirmPassword) {
+            alert("Please fill in all the fields");
+            return;
+        }
+
+        if (password !== confirmPassword) {
+            alert("Passwords do not match");
+            return;
+        }
+
+        alert("Account created successfully!");
+        
+    }
+
+    function showSignup() {
+        document.getElementById("loginform").classList.add("hidden");
+        document.getElementById("signupform").classList.remove("hidden");
+    }
+
+    function showLogin() {
+        document.getElementById("signupform").classList.add("hidden");
+        document.getElementById("loginform").classList.remove("hidden");
+    }
+</script>
+
+<!-- -------js for toggle menu------- -->
+<script>
+    var menuItems = document.getElementById("menuItems");
+    menuItems.style.maxHeight = "0px";
+    function menutoggle() {
+        if(menuItems.style.maxHeight == "0px"){
+            menuItems.style.maxHeight = "200px"
+        }
+        else{
+            menuItems.style.maxHeight = "0px"
+        }
+    }
+
+ </script>
+</body>
+</html>
